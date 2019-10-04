@@ -25,5 +25,11 @@ namespace SentenceTools.Test
         {
             Assert.AreEqual(0, testCounter.CountRepeats("dog", "cat"));
         }
+
+        [TestMethod]
+        public void CountRepeats_SingleWordPresentInSentence_1()
+        {
+            Assert.AreEqual(1, testCounter.CountRepeats("I own a Cat", "cat"));
+        }
     }
 }

@@ -14,9 +14,13 @@ namespace SentenceTools
             }
             else
             {
-                if (word == sentence)
+                string[] sentenceArray = sentence.Split(" ");
+                for (int i = 0; i < sentenceArray.Length; i++)
                 {
-                    repeats = 1;
+                    if (sentenceArray[i] == word)
+                    {
+                        repeats++;
+                    }
                 }
             }
             return repeats;
