@@ -31,5 +31,11 @@ namespace SentenceTools.Test
         {
             Assert.AreEqual(1, testCounter.CountRepeats("I own a Cat", "cat"));
         }
+
+        [TestMethod]
+        public void CountRepeats_RemovePunctuation_1()
+        {
+            Assert.AreEqual(1, testCounter.CountRepeats("I own a Cat.", "cat"));
+        }
     }
 }

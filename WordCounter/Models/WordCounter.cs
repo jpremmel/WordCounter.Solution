@@ -15,6 +15,11 @@ namespace SentenceTools
             else
             {
                 string[] sentenceArray = sentence.Split(" ");
+                char[] punctuation = { '.', ',', '-', '/', '"', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '=', ';', ':', '<', '>', '?', '{', '}', '[', ']', '\'', '|', '`', '~' };
+                for (int i = 0; i < sentenceArray.Length; i++)
+                {
+                    
+                }
                 for (int i = 0; i < sentenceArray.Length; i++)
                 {
                     if (sentenceArray[i] == word)
