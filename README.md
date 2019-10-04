@@ -8,6 +8,7 @@
 
 | Behavior | Input | Output |
 | -------- | :---------: | :---------: |
+| The program accepts two single-word inputs from the user and determines whether they are the same word | "cat; cat" | "'Cat' was found 1 time." |
 
 
 
