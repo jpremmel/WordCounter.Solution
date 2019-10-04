@@ -8,7 +8,10 @@
 
 | Behavior | Input | Output |
 | -------- | :---------: | :---------: |
-| The program accepts two single-word inputs from the user and determines whether they are the same word | "cat; cat" | "'Cat' was found 1 time." |
+| The program ignores case differences between the input word and the input sentence while searching | "cat; I own a Cat." | "Number of times 'cat' was found: 1" |
+| The program accepts two single-word inputs from the user and determines whether they are the same word | "cat; dog" | "Number of times 'cat' was found: 0" |
+| The program accepts a single word input and a sentence from the user and determines whether the word is present anywhere in the sentence | "cat; I own a cat and you own a cat." | "Number of times 'cat' was found: 1" |
+
 
 
 
