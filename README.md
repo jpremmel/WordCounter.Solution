@@ -13,7 +13,7 @@
 
 ## Setup/Installation Requirements
 
-* _Clone this repository and navigate to the "wordcounter.solution" project directory_
+* _Clone this repository and navigate to the "WordCounter.Solution" project directory_
 * _Navigate to the "WordCounter" directory_
 * _Run the command "dotnet restore"_
 * _Run the command "dotnet run"_
