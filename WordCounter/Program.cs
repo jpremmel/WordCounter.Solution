@@ -14,7 +14,7 @@ class Program
         if (checkValidity == "valid")
         {
             int repeats = counter.CountRepeats(sentence, word);
-            Console.WriteLine("Number of times '" + word + "' was found: " + repeats);
+            Console.WriteLine("Number of times \"" + word + "\" was found: " + repeats);
         }
         else
         {
