@@ -19,5 +19,11 @@ namespace SentenceTools.Test
         {
             Assert.AreEqual(1, testCounter.CountRepeats("Cat", "cat"));
         }
+
+        [TestMethod]
+        public void CountRepeats_CompareSingleWord_0()
+        {
+            Assert.AreEqual(0, testCounter.CountRepeats("dog", "cat"));
+        }
     }
 }
