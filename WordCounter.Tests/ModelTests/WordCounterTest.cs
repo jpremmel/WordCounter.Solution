@@ -27,15 +27,15 @@ namespace SentenceTools.Test
         }
 
         [TestMethod]
-        public void CountRepeats_SingleWordPresentInSentence_1()
+        public void CountRepeats_SingleWordPresentInSentence_2()
         {
-            Assert.AreEqual(1, testCounter.CountRepeats("I own a Cat", "cat"));
+            Assert.AreEqual(2, testCounter.CountRepeats("I own a cat and you own a cat", "cat"));
         }
 
         [TestMethod]
-        public void CountRepeats_RemovePunctuation_1()
+        public void CountRepeats_RemovePunctuation_2()
         {
-            Assert.AreEqual(1, testCounter.CountRepeats("I own a Cat.", "cat"));
+            Assert.AreEqual(2, testCounter.CountRepeats("I own a cat and you own a cat.", "cat"));
         }
     }
 }
