@@ -11,8 +11,8 @@
 | The program ensures that the word input is only one word | "cat dog; I own a cat." | "Can only search for a single word; please try again." |
 | The program ignores case differences between the two inputs while searching | "cat; Cat." | "Number of times 'cat' was found: 1" |
 | The program accepts two single-word inputs from the user and determines whether they are the same word | "cat; dog" | "Number of times 'cat' was found: 0" |
-| The program accepts a single word and a sentence from the user and determines whether the word is indeed present in the sentence | "cat; I own a cat" | "Number of times 'cat' was found: 1" |
-| The program accepts a single word and a sentence from the user and identifies the word regardless of punctuation | "cat; I own a cat." | "Number of times 'cat' was found: 1" |
+| The program accepts a single word and a sentence from the user and determines how many times the word appears in the sentence | "cat; I own a cat" | "Number of times 'cat' was found: 1" |
+| The program accepts a single word and a sentence from the user and identifies the word regardless of punctuation surrounding the word | "cat; I own a cat." | "Number of times 'cat' was found: 1" |
 
 
 ## Setup/Installation Requirements
