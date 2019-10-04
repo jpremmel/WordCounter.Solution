@@ -10,16 +10,16 @@ class Program
         Console.WriteLine("Enter the word you'd like to count:");
         string word = Console.ReadLine();
         RepeatCounter counter = new RepeatCounter();
-        int repeats = counter.CountRepeats(sentence, word);
-        if (repeats == -1)
+        string checkValidity = counter.CheckValidity(sentence, word);
+        if (checkValidity == "valid")
         {
-            Console.WriteLine("Can only search for a single word. Please try again.");
-            Main();
+            int repeats = counter.CountRepeats(sentence, word);
+            Console.WriteLine("Number of times '" + word + "' was found: " + repeats);
         }
         else
         {
-            Console.WriteLine("Number of times '" + word + "' was found: " + repeats);
+            Console.WriteLine(checkValidity);
+            Main();
         }
-
     }
 }

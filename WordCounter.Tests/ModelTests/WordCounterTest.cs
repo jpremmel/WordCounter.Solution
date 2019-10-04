@@ -11,7 +11,7 @@ namespace SentenceTools.Test
         [TestMethod]
         public void CountRepeats_SingleWordSearch_TryAgain()
         {
-            Assert.AreEqual(-1, testCounter.CountRepeats("I own a Cat.", "cat dog"));
+            Assert.AreEqual("Can only search for a single word. Please try again.", testCounter.CheckValidity("I own a Cat.", "cat dog"));
         }
 
         [TestMethod]
