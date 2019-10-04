@@ -14,15 +14,12 @@ namespace SentenceTools
             }
             else
             {
-                string[] sentenceArray = sentence.Split(" ");
-                char[] punctuation = { '.', ',', '-', '/', '"', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '=', ';', ':', '<', '>', '?', '{', '}', '[', ']', '\'', '|', '`', '~' };
-                for (int i = 0; i < sentenceArray.Length; i++)
+                string[] words = sentence.Split(" ");
+                char[] punctuation = { '.', ',', '-', '/', '"', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '=', ';', ':', '<', '>', '?', '{', '}', '[', ']', '|', '`', '~' };
+                for (int i = 0; i < words.Length; i++)
                 {
-                    
-                }
-                for (int i = 0; i < sentenceArray.Length; i++)
-                {
-                    if (sentenceArray[i] == word)
+                    words[i] = words[i].Trim(punctuation);
+                    if (words[i] == word)
                     {
                         repeats++;
                     }
